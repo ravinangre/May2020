@@ -96,7 +96,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>cucumber_test_automation_framework</projectName>
+                            <projectName>cucumber_test_automation_framewor</projectName>
                             <outputDirectory>target/cucumber-report/cucumber-html-reports</outputDirectory>
                             <inputDirectory>target/cucumber-report</inputDirectory>
 
