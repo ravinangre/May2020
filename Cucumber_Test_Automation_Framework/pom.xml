@@ -10,7 +10,6 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven-cucumber-reporting>4.8.0</maven-cucumber-reporting>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -70,6 +69,11 @@
 			<version>1.2.5</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+  			<groupId>de.monochromata.cucumber</groupId>
+  			<artifactId>reporting-plugin</artifactId>
+  			<version>4.0.96</version>
+		</dependency>
 	</dependencies>
 	 
 	<build>
@@ -85,20 +89,50 @@
 				</configuration>
 			</plugin>
 			<plugin>
+    <groupId>com.trivago.rta</groupId>
+    <artifactId>cluecumber-report-plugin</artifactId>
+    <version>2.6.1</version>
+    <executions>
+        <execution>
+            <id>report</id>
+            <phase>post-integration-test</phase>
+            <goals>
+                <goal>reporting</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+    <customParameters>
+        <Custom_Parameter>This is a test</Custom_Parameter>
+        <Custom_URL>http://www.flipkart.com</Custom_URL>
+        <_Text>This is a long text that is displayed without the key. This can be used to display longer texts in the report!</_Text>
+    </customParameters>
+     <failScenariosOnPendingOrUndefinedSteps>true</failScenariosOnPendingOrUndefinedSteps>
+        <sourceJsonReportDirectory>${project.build.directory}/TestReports</sourceJsonReportDirectory>
+        <generatedHtmlReportDirectory>${project.build.directory}/TestReports</generatedHtmlReportDirectory>
+        <expandBeforeAfterHooks>true|false</expandBeforeAfterHooks>
+    <expandStepHooks>true|false</expandStepHooks>
+    <expandDocStrings>true|false</expandDocStrings>
+     <startPage>ALL_SCENARIOS</startPage>
+     
+    </configuration>    
+</plugin>
+			<plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>${maven-cucumber-reporting}</version>
+                <version>5.3.0</version>
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>test</phase>
+                        <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>cucumber_test_automation_framewor</projectName>
-                            <outputDirectory>target/cucumber-report/cucumber-html-reports</outputDirectory>
-                            <inputDirectory>target/cucumber-report</inputDirectory>
+                            <projectName>cucumber_test_automation_framework</projectName>
+                            <skip>false</skip>
+                            <outputDirectory>D:\Cucumber_Test_Automation_Framework\target\cucumber-report\cucumber-html-reports</outputDirectory>
+                            <inputDirectory>D:\Cucumber_Test_Automation_Framework\TestReports</inputDirectory>
 
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
