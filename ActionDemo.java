@@ -8,9 +8,9 @@ public class ActionDemo {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Sharayu\\Desktop\\chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\Sharayu\\Desktop\\geckodriver.exe");
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		
 		driver.get("http://demoqa.com/buttons");
 		
