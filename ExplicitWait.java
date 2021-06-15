@@ -25,7 +25,7 @@ public class ExplicitWait {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"login-username\"]"))).sendKeys("ravinangare");
 		
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"login-signin\"]"))).click();
-		
+		driver.close();
 	}
 
 }
