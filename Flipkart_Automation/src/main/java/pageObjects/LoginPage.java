@@ -29,7 +29,7 @@ public class LoginPage {
 		 LoginBtn.click();
 		 }
 	 public void enter_credentials() {
-		 enter_username("ravinangre@gmail.com");
-		 enter_password("gujar1311");
+		 enter_username("abc@gmail.com");
+		 enter_password("********");
 		 }
 }
