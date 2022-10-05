@@ -1,0 +1,1221 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1631900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on zerodha login page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_is_on_zerodha_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-25T01:51:06.891Z",
+        "before": [
+          {
+            "result": {
+              "duration": 27381700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13665191900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "valid login action",
+        "description": "",
+        "id": "kite-zerodha-login-feature-for-data-driven;valid-login-action;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 802728700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenarioFinish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 515913000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters userid as \"XA0634\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "XA0634",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_userid_as_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 225572500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters password as \"Sarika699!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sarika699!",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_password_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 306229000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on login button",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user navigate to pin page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_pin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027pin\u0027]\"}\n  (Session info: chrome\u003d105.0.5195.127)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027LAPTOP-IKS9SD1L\u0027, ip: \u0027192.168.194.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [b0d434f309c00b3d86b0f278aa2d2163, findElement {using\u003dxpath, value\u003d//input[@id\u003d\u0027pin\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\Sharayu\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50699}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50699/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b0d434f309c00b3d86b0f278aa2d2163\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat stepDefinition.test_Steps.user_enters_pin_as_something(test_Steps.java:145)\r\n\tat ✽.user enters pin as \"691991\"(file:///C:/Maven_cucumber/src/main/resources/Feature/datadriven.feature:12)\r\n",
+              "duration": 10154287200,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user enters pin as \"691991\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "691991",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_pin_as_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1622200,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "click on continue button",
+            "match": {
+              "location": "stepDefinition.test_Steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user navigate to dashboard page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 995100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on zerodha login page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_is_on_zerodha_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-25T01:51:33.379Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4396100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4443704300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "valid login action",
+        "description": "",
+        "id": "kite-zerodha-login-feature-for-data-driven;valid-login-action;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1077107900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenarioFinish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 220713300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters userid as \"SUG689\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUG689",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_userid_as_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 342024100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters password as \"ajujoshi@1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ajujoshi@1",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_password_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169495600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on login button",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 631000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user navigate to pin page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_pin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027pin\u0027]\"}\n  (Session info: chrome\u003d105.0.5195.127)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027LAPTOP-IKS9SD1L\u0027, ip: \u0027192.168.194.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ff5bb88b5ce1d156e7e0d51fcc9e1340, findElement {using\u003dxpath, value\u003d//input[@id\u003d\u0027pin\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\Sharayu\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50726/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ff5bb88b5ce1d156e7e0d51fcc9e1340\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat stepDefinition.test_Steps.user_enters_pin_as_something(test_Steps.java:145)\r\n\tat ✽.user enters pin as \"381838\"(file:///C:/Maven_cucumber/src/main/resources/Feature/datadriven.feature:12)\r\n",
+              "duration": 10078132600,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user enters pin as \"381838\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "381838",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_pin_as_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "click on continue button",
+            "match": {
+              "location": "stepDefinition.test_Steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1021000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user navigate to dashboard page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Kite Zerodha Login feature for data driven",
+    "description": "",
+    "id": "kite-zerodha-login-feature-for-data-driven",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Feature/datadriven.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on zerodha login page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_is_on_zerodha_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-25T01:51:49.797Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4445131300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "valid login action",
+        "description": "",
+        "id": "kite-zerodha-login-feature;valid-login-action",
+        "after": [
+          {
+            "result": {
+              "duration": 773922400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenarioFinish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 134094800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters userid as \"XA0634\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "XA0634",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_userid_as_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 265369400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters password as \"Sarika699!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sarika699!",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_password_as_something(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132208600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on login button",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 993600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user navigate to pin page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_pin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027pin\u0027]\"}\n  (Session info: chrome\u003d105.0.5195.127)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027LAPTOP-IKS9SD1L\u0027, ip: \u0027192.168.194.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [6949e3bde8097ab4c77fe21ebbf47c9e, findElement {using\u003dxpath, value\u003d//input[@id\u003d\u0027pin\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\Sharayu\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50754/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6949e3bde8097ab4c77fe21ebbf47c9e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat stepDefinition.test_Steps.user_enters_pin_as_something(test_Steps.java:145)\r\n\tat ✽.user enters pin as \"691991\"(file:///C:/Maven_cucumber/src/main/resources/Feature/login.feature:12)\r\n",
+              "duration": 10036802400,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user enters pin as \"691991\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "691991",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinition.test_Steps.user_enters_pin_as_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "click on continue button",
+            "match": {
+              "location": "stepDefinition.test_Steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user navigate to dashboard page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on zerodha login page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_is_on_zerodha_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-25T01:52:05.634Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1006500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3352729900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Forgot Password",
+        "description": "",
+        "id": "kite-zerodha-login-feature;forgot-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1082239900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1333600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenarioFinish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 206585200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click on Forgot Password link",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_click_on_forgot_password_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24865400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user navigate to forgot password page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_forgot_password_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 288416600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enters userid",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_userid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 291225800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enters PAN Number",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_pan_number()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on zerodha login page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_is_on_zerodha_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-25T01:52:10.899Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1002400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3966887500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Invalid login action",
+        "description": "",
+        "id": "kite-zerodha-login-feature;invalid-login-action",
+        "after": [
+          {
+            "result": {
+              "duration": 914540100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1023500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenarioFinish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 139058400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user enters invalid username",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_invalid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 275232800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user enters password",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223961400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user click on login button",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Kite Zerodha Login feature",
+    "description": "",
+    "id": "kite-zerodha-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Feature/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on zerodha login page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_is_on_zerodha_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143210000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 291728700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters password",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226779900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on login button",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3615100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigate to pin page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_pin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027pin\u0027]\"}\n  (Session info: chrome\u003d105.0.5195.127)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027LAPTOP-IKS9SD1L\u0027, ip: \u0027192.168.194.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3adcdf944539b63ba8ee46bb614ebb87, findElement {using\u003dxpath, value\u003d//input[@id\u003d\u0027pin\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\Sharayu\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50820}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50820/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3adcdf944539b63ba8ee46bb614ebb87\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat stepDefinition.test_Steps.user_enters_pin(test_Steps.java:75)\r\n\tat ✽.user enters pin(file:///C:/Maven_cucumber/src/main/resources/Feature/watchlist.feature:9)\r\n",
+              "duration": 10087944800,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user enters pin",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_pin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 977700,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on continue button",
+            "match": {
+              "location": "stepDefinition.test_Steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user navigate to dashboard page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-25T01:52:16.438Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1569500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3881424200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "validate search functionality",
+        "description": "",
+        "id": "kite-zerodha-watchlist-feature;validate-search-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 839937700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1020500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenarioFinish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "search box is displayed",
+            "match": {
+              "location": "stepDefinition.test_Steps.search_box_is_displayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "search a stock called sbin",
+            "match": {
+              "location": "stepDefinition.test_Steps.search_a_stock_called_sbin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "display the sbin results",
+            "match": {
+              "location": "stepDefinition.test_Steps.display_the_sbin_results()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1442600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on zerodha login page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_is_on_zerodha_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 128254400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 220747800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters password",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169190700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on login button",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigate to pin page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_pin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027pin\u0027]\"}\n  (Session info: chrome\u003d105.0.5195.127)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027LAPTOP-IKS9SD1L\u0027, ip: \u0027192.168.194.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [18a369ff5159a762e2aef5e546469329, findElement {using\u003dxpath, value\u003d//input[@id\u003d\u0027pin\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\Sharayu\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50849/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 18a369ff5159a762e2aef5e546469329\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat stepDefinition.test_Steps.user_enters_pin(test_Steps.java:75)\r\n\tat ✽.user enters pin(file:///C:/Maven_cucumber/src/main/resources/Feature/watchlist.feature:9)\r\n",
+              "duration": 10073843000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user enters pin",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_enters_pin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on continue button",
+            "match": {
+              "location": "stepDefinition.test_Steps.click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user navigate to dashboard page",
+            "match": {
+              "location": "stepDefinition.test_Steps.user_navigate_to_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-25T01:52:31.951Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1002800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenarioStart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4084751400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "validate successfully add the stocks in watchlist",
+        "description": "",
+        "id": "kite-zerodha-watchlist-feature;validate-successfully-add-the-stocks-in-watchlist",
+        "after": [
+          {
+            "result": {
+              "duration": 920865700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.test_Steps.afterScenarioFinish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "search a stock called sbin",
+            "match": {
+              "location": "stepDefinition.test_Steps.search_a_stock_called_sbin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "mouse over the first stock we found",
+            "match": {
+              "location": "stepDefinition.test_Steps.mouse_over_the_first_stock_we_found()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "click on Add button",
+            "match": {
+              "location": "stepDefinition.test_Steps.click_on_add_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "validate the sbin stock successfully added into watchlist",
+            "match": {
+              "location": "stepDefinition.test_Steps.validate_the_sbin_stock_successfully_added_into_watchlist()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-09-25T01:52:47.573Z",
+        "line": 27,
+        "name": "validate successfully delete the stocks from watchlist",
+        "description": "",
+        "id": "kite-zerodha-watchlist-feature;validate-successfully-delete-the-stocks-from-watchlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Kite Zerodha Watchlist feature",
+    "description": "",
+    "id": "kite-zerodha-watchlist-feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Feature/watchlist.feature",
+    "tags": []
+  }
+]
