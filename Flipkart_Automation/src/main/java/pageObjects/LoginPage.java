@@ -30,6 +30,6 @@ public class LoginPage {
 		 }
 	 public void enter_credentials() {
 		 enter_username("ravinangre@gmail.com");
-		 enter_password("gujar1311");
+		 enter_password("P@ssw0rdRN");
 		 }
 }
